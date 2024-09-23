@@ -8,6 +8,6 @@
 
 ## DEPENDECIES
 
-(qb-banking)[https://github.com/qbcore-framework/qb-banking]
-(qb-core)[https://github.com/qbcore-framework/qb-core]
-(TextUI)[https://github.com/ExterCore/exter-textui]
+[qb-banking](https://github.com/qbcore-framework/qb-banking)
+[qb-core](https://github.com/qbcore-framework/qb-core)
+[TextUI](https://github.com/ExterCore/exter-textui)

@@ -1,0 +1,92 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body id="body">
+        <div id="billingDiv">
+            <div id="billingDivInside">
+                <div id="billingDivInside2">
+                    <div id="billingDivInside2Top">
+                        <div id="billingDivInside2TopLeft">
+                            <h4 id="title1"></h4>
+                            <span id="description1"></span>
+                        </div>
+                        <div id="billingDivInside2TopRight">
+                            <div class="billingDivInside2TopRightBtn billingDivInside2TopRightBtnActive" id="billingDivInside2TopRightBtn1" onclick="clFunc('showOutstandings')">
+                                <i id="billingDivInside2TopRightBtnIcon1" class="fas fa-file-invoice-dollar"></i>
+                                <i id="billingDivInside2TopRightBtnIcon2" class="fas fa-file-invoice-dollar"></i>
+                                <div id="billingDivInside2TopRightBtnTextDiv"><span id="menutitle1"></span></div>
+                            </div>
+                            <div class="billingDivInside2TopRightBtn" id="billingDivInside2TopRightBtn2" onclick="clFunc('showPaids')">
+                                <i id="billingDivInside2TopRightBtnIcon1" class="fas fa-file-alt"></i>
+                                <i id="billingDivInside2TopRightBtnIcon2" class="fas fa-file-alt"></i>
+                                <div id="billingDivInside2TopRightBtnTextDiv"><span id="menutitle2"></span></div>
+                            </div>
+                        </div>
+                        <div id="billingDivInside2TopBottomLine">
+                            <div id="billingDivInside2TopBottomLineInside"></div>
+                            <div id="billingDivInside2TopBottomLineLeft"></div>
+                        </div>
+                    </div>
+                    <div id="billingDivInside2Bottom">
+                        <div id="billingDivInside2BottomTop"><h4 id="bottomtitle"></h4></div>
+                        <div id="billingDivInside2BottomBottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="billingInputDiv">
+            <div id="billingInputDivInside">
+                <div id="billingInputDivInsideTopLeft">
+                    <h4 id="title2"></h4>
+                    <span id="description2"></span>
+                </div>
+                <div id="billingInputDivInsideInputs">
+                    <div id="billingInputDivInsideInputDiv1" class="billingInputDivInsideInputDiv" style="margin-top: 4%;">
+                        <div id="billingInputDivInsideInputIconDiv"><i class="fas fa-money-bill-wave"></i></div>
+                        <div id="billingInputDivInsideInputRightDiv">
+                            <h4 id="invoice_title_input"></h4>
+                            <input type="text" class="billingInputDivInsideInput" id="billingInputDivInsideInput-Title" placeholder="Invoice title here...">
+                        </div>
+                    </div>
+                    <div id="billingInputDivInsideInputDiv2" class="billingInputDivInsideInputDiv">
+                        <div id="billingInputDivInsideInputIconDiv"><i class="fas fa-money-bill-wave"></i></div>
+                        <div id="billingInputDivInsideInputRightDiv">
+                            <h4 id="invoice_amount_input"></h4>
+                            <input type="number" class="billingInputDivInsideInput" id="billingInputDivInsideInput-Price" placeholder="0$" onkeydown="return event.keyCode !== 69" min="1" max="999999">
+                        </div>
+                    </div>
+                    <div id="billingInputDivInsideInputDiv3" class="billingInputDivInsideInputDiv">
+                        <div id="billingInputDivInsideInputIconDiv"><i class="fas fa-id-card-alt"></i></div>
+                        <div id="billingInputDivInsideInputRightDiv">
+                            <h4 id="invoice_target_player_input"></h4>
+                            <input type="text" class="billingInputDivInsideInput" id="billingInputDivInsideInput-PlayerId" readonly>
+                        </div>
+                    </div>
+                    <!-- <div id="billingInputDivInsideInputDiv3" class="billingInputDivInsideInputDiv">
+                        <div id="billingInputDivInsideInputIconDiv"><i class="fas fa-calendar-day"></i></div>
+                        <div id="billingInputDivInsideInputRightDiv">
+                            <h4>Payment Deadline (1-30 days)</h4>
+                            <input type="number" class="billingInputDivInsideInput" id="billingInputDivInsideInput-Deadline" placeholder="Default 30 days" onkeydown="return event.keyCode !== 69" min="1" max="30">
+                        </div>
+                    </div> -->
+                    <!-- <div id="billingInputDivInsideInputDiv4" class="billingInputDivInsideInputDiv" style="height: 25%;">
+                        <div id="billingInputDivInsideInputIconDiv"><i class="fas fa-comments"></i></div>
+                        <div id="billingInputDivInsideInputRightDiv" style="width: 70%; height: 77%;">
+                            <h4>Description (max 150 character)</h4>
+                            <textarea style="border: 0; outline: 0; resize: none;" maxlength="150" rows="7" cols="32" class="billingInputDivInsideInput" id="billingInputDivInsideInput-Description" placeholder="Write description here..."></textarea>
+                        </div>
+                    </div> -->
+                    <div id="billingInputDivInsideApproveDiv" onclick="clFunc('sendInvoice')"></div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
